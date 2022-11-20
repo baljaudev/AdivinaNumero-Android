@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fondo"
+    android:padding="@dimen/margen_in"
+    tools:context=".MainActivity"
+    android:id="@+id/layout_rl">
+
+    <TextView
+        android:id="@+id/tvIntentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/tvIntentosRestantes"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamTv" />
+
+    <TextView
+        android:id="@+id/tvPista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:text="@string/tvTextoInicio"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamTv"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnComparacion"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/pedir_num"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamTv"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnComparacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btnPrueba"
+        android:textAlignment="center"
+        android:textColor="@color/color_fondo"
+        android:textSize="@dimen/tamTv"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"/>
+
+</RelativeLayout>
